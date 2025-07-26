@@ -3,6 +3,7 @@ name: Deploy S3 and SNS app to ECR
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
