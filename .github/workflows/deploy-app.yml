@@ -39,5 +39,5 @@ jobs:
         run: |
           echo "ECR_REGISTRY: $ECR_REGISTRY"
           echo "SQS_ECR_REPOSITORY: $SQS_ECR_REPOSITORY"
-          docker build -t $ECR_REGISTRY/$SQS_ECR_REPOSITORY:latest ./sns-app
+          docker build -t $ECR_REGISTRY/$SQS_ECR_REPOSITORY:latest ./sqs-app
           docker push $ECR_REGISTRY/$SQS_ECR_REPOSITORY:latest
